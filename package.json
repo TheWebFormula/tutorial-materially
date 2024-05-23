@@ -5,11 +5,13 @@
   "type": "module",
   "main": "index.js",
   "exports": {
-    ".": "./index.js"
+    ".": "./index.js",
+    "./themeGenerator": "./src/themeGenerator.js"
   },
   "scripts": {
     "start": "node --watch-path=./src --watch-path=./docs build.js",
-    "build": "NODE_ENV=production node build.js"
+    "build": "NODE_ENV=production node build.js",
+    "build-theme": "node buildTheme.js"
   },
   "author": "Ben Rubin (B-3PO)",
   "license": "MIT",
@@ -22,8 +24,9 @@
   },
   "homepage": "https://github.com/TheWebFormula/tutorial-materially#readme",
   "devDependencies": {
-    "esbuild": "^0.21.3",
+    "@material/material-color-utilities": "^0.2.7",
     "@thewebformula/lithe": "file:../lithe",
-    "@thewebformula/tutorial-materially": "file:./"
+    "@thewebformula/tutorial-materially": "file:./",
+    "esbuild": "^0.21.3"
   }
 }

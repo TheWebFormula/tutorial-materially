@@ -1,0 +1,24 @@
+:root {
+  color-scheme: only light;
+}
+
+:root.wfm-theme-dark {
+  color-scheme: only dark;
+}
+
+body {
+  /* --wfm-background-colo can be used to override default --wfm-surface */
+  background-color: var(--wfm-background-color, var(--wfm-surface));
+  
+  margin: 0;
+  width: 100vw;
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: min-content minmax(0, 1fr) min-content;
+  grid-template-rows: min-content minmax(0, 1fr) min-content;
+  grid-template-areas:
+    "navigation header header"
+    "navigation main side"
+    "navigation footer footer";
+  overflow: auto;
+}

@@ -1,0 +1,19 @@
+:host {
+  grid-area: main;
+  position: relative;
+  display: flex;
+  flex: 1;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+::slotted(wfm-pane) {
+  flex: 1;
+
+  padding: 16px;
+  box-sizing: border-box;
+  border-radius: var(--wfm-shape-large);
+
+  /* --wfm-surface-container-color is an override variable that can be set in application */
+  background-color: var(--wfm-surface-container-color, var(--wfm-surface));
+}

@@ -1,0 +1,23 @@
+@import url(./colorTokens.css);
+
+:root {
+  --wfm-background-color: var(--wfm-surface-container-low);
+  --wfm-navigation-container-color: var(--wfm-surface-container-low);
+  /* --wfm-surface-container-color: var(--wfm-surface-container-lowest); */
+}
+
+h1 {
+  margin: 0;
+  font-size: var(--wfm-font-large-headline-size);
+  line-height: var(--wfm-font-large-headline-line-height);
+  font-weight: var(--wfm-font-large-headline-weight);
+  letter-spacing: var(--wfm-font-large-headline-tracking);
+}
+
+h2 {
+  margin: 0;
+  font-size: var(--wfm-font-small-headline-size);
+  line-height: var(--wfm-font-small-headline-line-height);
+  font-weight: var(--wfm-font-small-headline-weight);
+  letter-spacing: var(--wfm-font-small-headline-tracking);
+}
