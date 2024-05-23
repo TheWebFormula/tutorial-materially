@@ -1,0 +1,29 @@
+{
+  "name": "tutorial-materially",
+  "version": "0.1.0",
+  "description": "Tutorials for building Materially",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "scripts": {
+    "start": "node --watch-path=./src --watch-path=./docs build.js",
+    "build": "NODE_ENV=production node build.js"
+  },
+  "author": "Ben Rubin (B-3PO)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheWebFormula/tutorial-materially.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TheWebFormula/tutorial-materially/issues"
+  },
+  "homepage": "https://github.com/TheWebFormula/tutorial-materially#readme",
+  "devDependencies": {
+    "esbuild": "^0.21.3",
+    "@thewebformula/lithe": "file:../lithe",
+    "@thewebformula/tutorial-materially": "file:./"
+  }
+}
