@@ -25,7 +25,7 @@
   "homepage": "https://github.com/TheWebFormula/tutorial-materially#readme",
   "devDependencies": {
     "@material/material-color-utilities": "^0.2.7",
-    "@thewebformula/lithe": "^0.4.0",
+    "@thewebformula/lithe": "^0.6.1",
     "@thewebformula/tutorial-materially": "file:./",
     "esbuild": "^0.21.3"
   }
